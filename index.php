@@ -4,6 +4,7 @@ require_once("connection.php");
 header('Content-Type:application/json');
 
 $data= json_decode(file_get_contents("php://input"),true);
+var_dump($data);
 $username=$data['username'];
 $age=$data['age'];
 $phone=$data['phone'];
